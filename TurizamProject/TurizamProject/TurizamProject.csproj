@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C93F9E5-3B41-4F1B-9574-47D8AB0C15F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TurizamProject</RootNamespace>
+    <AssemblyName>TurizamProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Neo4j.Driver, Version=5.7.11.0, Culture=neutral, PublicKeyToken=b646bc66d277ac07, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo4j.Driver.Signed.5.7.0\lib\netstandard2.0\Neo4j.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Neo4jClient, Version=5.1.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo4jClient.5.1.11\lib\netstandard2.0\Neo4jClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDestinacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDestinacija.Designer.cs">
+      <DependentUpon>AdminDestinacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDodPutovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDodPutovanje.Designer.cs">
+      <DependentUpon>AdminDodPutovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDodSmestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDodSmestaj.Designer.cs">
+      <DependentUpon>AdminDodSmestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForma.Designer.cs">
+      <DependentUpon>AdminForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPutovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPutovanje.Designer.cs">
+      <DependentUpon>AdminPutovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSmestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSmestaj.Designer.cs">
+      <DependentUpon>AdminSmestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="DomainModel\Admin.cs" />
+    <Compile Include="DomainModel\Destinacija.cs" />
+    <Compile Include="DomainModel\Klijent.cs" />
+    <Compile Include="DomainModel\Ocenio.cs" />
+    <Compile Include="DomainModel\Putovanje.cs" />
+    <Compile Include="DomainModel\Rezervisao.cs" />
+    <Compile Include="DomainModel\Smestaj.cs" />
+    <Compile Include="Interesovanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interesovanja.Designer.cs">
+      <DependentUpon>Interesovanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzmenaNaloga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmenaNaloga.Designer.cs">
+      <DependentUpon>IzmenaNaloga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlijentForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlijentForma.Designer.cs">
+      <DependentUpon>KlijentForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoviNalogForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoviNalogForma.Designer.cs">
+      <DependentUpon>NoviNalogForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PocetnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaForma.Designer.cs">
+      <DependentUpon>PocetnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrijavljivanjeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrijavljivanjeForma.Designer.cs">
+      <DependentUpon>PrijavljivanjeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RezervacijaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervacijaForma.Designer.cs">
+      <DependentUpon>RezervacijaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervacije.Designer.cs">
+      <DependentUpon>Rezervacije.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDestinacija.resx">
+      <DependentUpon>AdminDestinacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDodPutovanje.resx">
+      <DependentUpon>AdminDodPutovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDodSmestaj.resx">
+      <DependentUpon>AdminDodSmestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForma.resx">
+      <DependentUpon>AdminForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPutovanje.resx">
+      <DependentUpon>AdminPutovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSmestaj.resx">
+      <DependentUpon>AdminSmestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interesovanja.resx">
+      <DependentUpon>Interesovanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmenaNaloga.resx">
+      <DependentUpon>IzmenaNaloga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlijentForma.resx">
+      <DependentUpon>KlijentForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoviNalogForma.resx">
+      <DependentUpon>NoviNalogForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaForma.resx">
+      <DependentUpon>PocetnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrijavljivanjeForma.resx">
+      <DependentUpon>PrijavljivanjeForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RezervacijaForma.resx">
+      <DependentUpon>RezervacijaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezervacije.resx">
+      <DependentUpon>Rezervacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>
